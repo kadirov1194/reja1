@@ -95,23 +95,6 @@
   border: 1.5px solid #f0f0f5;
 }
 
-.main_frame .left_frame .left_2 {
-  position: relative;
-  width: 220px;
-  height: 126px;
-  margin-left: 44px;
-  background-color: aqua;
-}
-
-.main_frame .left_frame .left_3 {
-  position: relative;
-  width: 220px;
-  height: 153px;
-  margin-top: 25px;
-  margin-left: 45px;
-  background-color: aqua;
-}
-
 .main_frame .left_frame .left_1_3 {
   position: relative;
   display: flex;
@@ -120,6 +103,161 @@
   width: 147.83px;
   height: 24.31px;
 }
+
+/* ---------------------------------left_2 bo'yicha amallar */
+.main_frame .left_frame .left_2 {
+  position: relative;
+  width: 220px;
+  height: 126px;
+  margin-left: 44px;
+
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+}
+
+.main_frame .left_frame .left_2 .left_2_1 {
+  width: 46.209px;
+  height: 24px;
+  margin-bottom: 9px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: capitalize;
+  align-items: center;
+
+  background-color: #ffb400;
+  font-weight: 400px;
+  line-height: 24px;
+}
+.main_frame .left_frame .left_2 .left_2_2 {
+  width: 89px;
+  height: 24;
+  background-color: #ffb400;
+  margin-bottom: 9px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_frame .left_frame .left_2 .left_2_3 {
+  width: 85px;
+  height: 24;
+  margin-bottom: 9px;
+  background-color: #ffb400;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.main_frame .left_frame .left_2 .left_2_4 {
+  width: 75px;
+  height: 24;
+  background-color: #ffb400;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* -----------------------------------------------left_2-2----------------- */
+.main_frame .left_frame .left_2 .left_2_5 {
+  color: var(--Black, #2b2b2b);
+  text-align: right;
+  flex-direction: row;
+  /* Paragraph Progress - 15 */
+  font-family: Inter;
+  flex-direction: row;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+  position: relative;
+  margin-top: 5px;
+}
+.main_frame .left_frame .left_2 .left_2_6 {
+  color: var(--Black, #2b2b2b);
+  text-align: right;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+
+  /* Paragraph Progress - 15 */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+  margin-top: 5px;
+  position: relative;
+}
+.main_frame .left_frame .left_2 .left_2_7 {
+  text-align: right;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+
+  /* Paragraph Progress - 15 */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+  margin-top: 5px;
+  position: relative;
+}
+.main_frame .left_frame .left_2 .left_2_8 {
+  color: var(--Available, #7eb942);
+  text-align: right;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+
+  /* Paragraph Progress - 15 */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+  position: relative;
+  margin-top: 6px;
+}
+.main_frame .left_frame .left_2 .left_2_9 {
+  color: var(--Black, #2b2b2b);
+  text-align: right;
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+
+  /* Paragraph Progress - 15 */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+  margin-top: 6px;
+  position: relative;
+}
+/* -------------------------------------------------------- */
+/* ----------------------------------------left-3 box ustida amallar */
+.main_frame .left_frame .left_3 {
+  position: relative;
+  width: 220px;
+  height: 153px;
+  margin-top: 25px;
+  margin-left: 45px;
+  background-color: aqua;
+}
+/* ------------------------------------left_3-1 */
+
+/* ===============================================  */
 
 .link_href {
   text-decoration: none;
