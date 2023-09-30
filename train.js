@@ -82,3 +82,18 @@ console.log("passed here 1");
 //   console.log(javob);
 // }
 // run();
+
+//--------------------------------------------------------
+// E-Task
+//Shunday function tuzing, u bitta string argumentni qabul qilib osh stringni teskari qilib return qilsin
+
+//masalan: getReverse("hello") return qilsin "olleh"
+function getReverse(world) {
+  let split = world.split("");
+  console.log(split);
+  let reversed = split.reverse();
+  console.log(reversed);
+  let str = reversed.join("");
+  console.log(str);
+}
+getReverse("hello");
