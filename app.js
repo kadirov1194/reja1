@@ -2,8 +2,9 @@ console.log("Web Serverni boshlash");
 //const { log } = require("console");
 const express = require("express");
 const app = express();
+const res = require("express/lib/response");
 const fs = require("fs");
-const db = require("./server");
+const db = require("./server").db();
 
 // let user;
 // fs.readFile("database/user.json", "utf8", (err, data) => {
@@ -31,7 +32,19 @@ app.set("view engine", "ejs");
 
 // 4-bosqich:  Routinga moljallangan
 app.post("/create-item", (req, res) => {
-  console.log(req);
+  console.log("user entered /create-item");
+  //console.log(req.body);
+  const new_reja = req.body.reja;
+  db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
+    if (err) {
+      console.log(err);
+      res.end("something went wrong");
+    } else {
+      res.end("successfully added");
+    }
+  });
+
+  //console.log(req);
   // res.json({ test: "success" });
 });
 
@@ -40,7 +53,17 @@ app.get("/author", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  res.render("reja");
+  console.log("user entered /");
+  db.collection("plans")
+    .find()
+    .toArray((err, data) => {
+      if (err) {
+        console.log(err);
+        res.end("something went wrong");
+      } else {
+        res.render("reja", { items: data });
+      }
+    });
 });
 
 // Server hosil qilish

@@ -1,10 +1,10 @@
 const http = require("http");
-const app = require("./app");
+
 const mongodb = require("mongodb");
 
 let db;
 const connectionString =
-  "mongodb+srv://wayfay:X2AFCDU4bnwfrdwC@cluster0.lubzyce.mongodb.net/";
+  "mongodb+srv://wayfay:X2AFCDU4bnwfrdwC@cluster0.lubzyce.mongodb.net/Reja";
 
 mongodb.connect(
   connectionString,
